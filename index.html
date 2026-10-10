@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -35,12 +35,12 @@ body{
 
 .container{
     width:min(430px,100%);
-    display:grid; /* التعديل هنا: استخدام الجريد بدل الارتفاع الثابت */
+    display:grid;
     position:relative;
 }
 
 .screen{
-    grid-area: 1 / 1; /* التعديل هنا: دمج الشاشات بنفس المساحة بدون Position Absolute */
+    grid-area: 1 / 1;
     background:rgba(255,255,255,.72);
     backdrop-filter:blur(15px);
     -webkit-backdrop-filter:blur(15px);
@@ -53,7 +53,7 @@ body{
     justify-content:center;
     text-align:center;
 
-    padding:40px 22px 65px; /* التعديل هنا: مساحة سفلية إضافية للنقاط */
+    padding:40px 22px 65px;
 
     opacity:0;
     pointer-events:none;
@@ -88,7 +88,7 @@ body{
 .art img{
     width:100%;
     height:100%;
-    object-fit:cover; /* التعديل هنا: لملء الفراغ داخل الإطار */
+    object-fit:cover;
     display:block;
 }
 
@@ -190,7 +190,7 @@ h1{
 /* الرسالة */
 .message-card{
     width:100%;
-    max-height:350px; /* التعديل هنا: تحديد أقصى ارتفاع بدقة */
+    max-height:350px;
     overflow:auto;
 
     padding:25px 20px;
@@ -263,8 +263,6 @@ h1{
 
 /* للموبايل */
 @media(max-width:500px){
-    /* تم إزالة الارتفاع الثابت من هنا أيضاً */
-    
     .art{
         width:220px;
         height:220px;
@@ -290,8 +288,8 @@ h1{
 
 <div class="container">
 
-<!-- معرف التليغرام في الركن الفوق داخل الكارت -->
-<div style="position: absolute; top: -12px; right: 10px; z-index: 100;">
+<!-- معرف التليغرام في الركن العلوي الأيمن بشكل واضح وآمن داخل الكارت -->
+<div style="position: absolute; top: 15px; right: 15px; z-index: 999;">
     <a href="https://t.me/IBG6B" target="_blank" style="color: #fff; font-size: 13px; text-decoration: none; font-family: 'Cairo', sans-serif; background: #d63384; padding: 6px 14px; border-radius: 50px; border: 2px solid #fff; display: flex; align-items: center; gap: 5px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); font-weight: 700;">
         <span style="direction: ltr;">@IBG6B</span>
     </a>
